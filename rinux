@@ -1,0 +1,6 @@
+mkdir //디렉터리 만들기
+cd //디렉터리 들어가기
+notepad //메모장 생성
+cl //컴파일
+lib /OUT:my.lib add.obj
+link test my.lib
