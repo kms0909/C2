@@ -4,3 +4,29 @@ notepad //메모장 생성
 cl //컴파일
 lib /OUT:my.lib add.obj
 link test my.lib
+
+mkdir anu
+cd anu
+
+notepad test.c
+cl test.c
+notepad add.c
+cl add.c
+
+del *.obj
+del *.exe
+cl /c *.c
+lib /OUT:my.lib add.obj
+link test my.lib
+
+<test.c>
+#include <stdio.h>
+
+int main(){
+  printf("%d", add(22,33));
+}
+
+<add.c>
+int add(int a, int b){
+  return (a + b);
+}
