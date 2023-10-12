@@ -5,6 +5,8 @@ cl //컴파일
 lib /OUT:my.lib add.obj
 link test my.lib
 
+visual studio 2022 실행 -> 코드를 사용하지 않고 계속 -> 도구 -> 명령줄 -> 개발자 명령 프롬포트
+
 mkdir anu
 cd anu
 
